@@ -39,18 +39,18 @@
 
     <!-- Header/Navigation -->
     <header class="bg-white/95 backdrop-blur-xl shadow-[0_10px_30px_rgba(2,43,16,0.08)] sticky top-0 z-50 border-b border-primary-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+        <div class="w-full px-3 sm:px-4 lg:px-5">
+            <div class="flex justify-between items-center min-h-24 gap-6">
                 <!-- Logo -->
-                <a href="{{ url('/') }}" class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-800 rounded-full flex items-center justify-center shadow-lg shadow-primary-700/20 ring-2 ring-primary-100">
-                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <a href="{{ url('/') }}" class="flex items-center gap-3 shrink-0 w-[280px]">
+                    <div class="w-11 h-11 bg-gradient-to-br from-primary-500 to-primary-800 rounded-full flex items-center justify-center shadow-lg shadow-primary-700/20 ring-2 ring-primary-100">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-primary-700 font-serif leading-none">CROSBY FARM<br>& INVESTMENTS</h1>
-                        <span class="text-xs text-gray-500">FOUNDED BY ANDRE CROSBY</span>
+                    <div class="min-w-0">
+                        <h1 class="text-lg font-bold text-primary-700 font-serif leading-none">CROSBY FARM<br>& INVESTMENTS</h1>
+                        <span class="block text-[11px] text-gray-500 leading-tight mt-1">FOUNDED BY ANDRE CROSBY</span>
                     </div>
                 </a>
 
@@ -72,12 +72,16 @@
                 @endphp
 
                 <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex flex-wrap justify-end items-center gap-x-5 gap-y-2 max-w-4xl">
-                    @foreach ($menuItems as $item)
-                        @php
-                            $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
-                        @endphp
-                        <a href="{{ url($item['url']) }}" class="text-xs xl:text-sm font-semibold {{ $isActive ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">{{ $item['label'] }}</a>
+                <nav class="hidden lg:flex flex-1 flex-col items-end justify-center gap-2 overflow-hidden">
+                    @foreach (array_chunk($menuItems, 6) as $menuRow)
+                        <div class="flex flex-wrap justify-end items-center gap-x-4 xl:gap-x-5 gap-y-1">
+                            @foreach ($menuRow as $item)
+                                @php
+                                    $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
+                                @endphp
+                                <a href="{{ url($item['url']) }}" class="whitespace-nowrap text-[11px] xl:text-xs font-semibold leading-none {{ $isActive ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">{{ $item['label'] }}</a>
+                            @endforeach
+                        </div>
                     @endforeach
                 </nav>
 
