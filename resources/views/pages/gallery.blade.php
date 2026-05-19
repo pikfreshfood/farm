@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="operations" style="animation-delay: 0.3s">
-                <img src="https://images.unsplash.com/photo-1593179532813-25e9a3cdb361?w=600&q=80" alt="Milking Operations" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80" alt="Milking Operations" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Milking Operations</h4>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="operations" style="animation-delay: 0.4s">
-                <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=600&q=80" alt="Farm Machinery" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80" alt="Farm Machinery" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Modern Farm Machinery</h4>
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="livestock" style="animation-delay: 0.6s">
-                <img src="https://images.unsplash.com/photo-1524024973431-2ad916746264?w=600&q=80" alt="Goat Herd" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Goat Herd" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Goat Herd</h4>
@@ -114,7 +114,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="operations" style="animation-delay: 0.9s">
-                <img src="https://images.unsplash.com/photo-1530507629858-a4c57dbfe83d?w=600&q=80" alt="Family Farming" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80" alt="Family Farming" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Family Farming Heritage</h4>

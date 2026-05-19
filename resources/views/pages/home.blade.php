@@ -165,7 +165,7 @@
             <!-- Livestock Rearing -->
             <div class="farm-card bg-white rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.1s">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1593179532813-25e9a3cdb361?w=600&q=80" alt="Livestock Rearing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80" alt="Livestock Rearing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center -mt-12 mb-4 relative z-10 shadow-lg">

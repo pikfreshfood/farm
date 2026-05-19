@@ -22,17 +22,42 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="section-title animate-on-scroll">
             <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Suggested Blog Topics</h2>
-            <p class="text-gray-600">Dairy farming insights, livestock care tips, sustainable agriculture, farming technology, agricultural investment education, and seasonal farm updates.</p>
+            <p class="text-gray-600">Practical updates from our farm operations, investment programs, and sustainable agriculture work.</p>
+        </div>
+
+        @php
+            $topics = [
+                ['title' => 'Dairy Farming Insights', 'description' => 'Milk production, dairy cow care, equipment, and farm productivity updates.'],
+                ['title' => 'Livestock Care Tips', 'description' => 'Animal health, feeding routines, vaccination planning, and welfare practices.'],
+                ['title' => 'Sustainable Agriculture', 'description' => 'Responsible grazing, soil care, water conservation, and eco-friendly farming.'],
+                ['title' => 'Farming Technology', 'description' => 'Modern tools, automation, data tracking, and smarter farm management.'],
+                ['title' => 'Agricultural Investment Education', 'description' => 'Guides for passive income, farm-backed plans, and long-term wealth building.'],
+                ['title' => 'Seasonal Farm Updates', 'description' => 'Planting, harvest, weather notes, crop progress, and farm milestones.'],
+            ];
+        @endphp
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+            @foreach($topics as $topic)
+                <div class="rounded-lg border border-primary-100 bg-primary-50/50 p-5 animate-on-scroll">
+                    <div class="flex items-start gap-3">
+                        <span class="mt-1 h-2.5 w-2.5 rounded-full bg-gold-400 shadow-sm flex-shrink-0"></span>
+                        <div>
+                            <h3 class="font-bold text-primary-700">{{ $topic['title'] }}</h3>
+                            <p class="mt-2 text-sm leading-6 text-gray-600">{{ $topic['description'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             @php
             $posts = [
                 ['title' => 'Summer Milk Production Tips', 'category' => 'Dairy Farming', 'date' => 'May 15, 2026', 'read' => '5 min read', 'excerpt' => 'Learn how we optimize milk production during the hot summer months while keeping our cows comfortable and healthy.', 'image' => 'https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80'],
-                ['title' => 'Essential Livestock Care for Spring', 'category' => 'Livestock Care', 'date' => 'May 10, 2026', 'read' => '4 min read', 'excerpt' => 'Spring brings new challenges and opportunities for livestock management. Here\'s how we prepare our animals.', 'image' => 'https://images.unsplash.com/photo-1593179532813-25e9a3cdb361?w=600&q=80'],
+                ['title' => 'Essential Livestock Care for Spring', 'category' => 'Livestock Care', 'date' => 'May 10, 2026', 'read' => '4 min read', 'excerpt' => 'Spring brings new challenges and opportunities for livestock management. Here\'s how we prepare our animals.', 'image' => 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80'],
                 ['title' => 'Future of Sustainable Agriculture', 'category' => 'Sustainability', 'date' => 'May 5, 2026', 'read' => '6 min read', 'excerpt' => 'Exploring how modern farming techniques are shaping the future of sustainable food production in America.', 'image' => 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80'],
                 ['title' => 'Agricultural Investment for Beginners', 'category' => 'Investment', 'date' => 'April 28, 2026', 'read' => '7 min read', 'excerpt' => 'A comprehensive guide to understanding agricultural investments and how to get started with confidence.', 'image' => 'https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600&q=80'],
-                ['title' => 'Technology Revolutionizing Dairy Farming', 'category' => 'Technology', 'date' => 'April 20, 2026', 'read' => '5 min read', 'excerpt' => 'From automated milking to AI health monitoring, technology is transforming how we farm.', 'image' => 'https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=600&q=80'],
+                ['title' => 'Technology Revolutionizing Dairy Farming', 'category' => 'Technology', 'date' => 'April 20, 2026', 'read' => '5 min read', 'excerpt' => 'From automated milking to AI health monitoring, technology is transforming how we farm.', 'image' => 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80'],
                 ['title' => 'Spring Planting Season Update', 'category' => 'Seasonal Update', 'date' => 'April 15, 2026', 'read' => '4 min read', 'excerpt' => 'An update on our spring planting schedule and the crops we\'re focusing on this growing season.', 'image' => 'https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80'],
             ];
             @endphp

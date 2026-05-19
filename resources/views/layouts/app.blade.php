@@ -224,7 +224,7 @@
 
                 @php
                     $menuItems = [
-                        ['label' => 'Homepage', 'url' => '/', 'active' => '/'],
+                        ['label' => 'Home', 'url' => '/', 'active' => '/'],
                         ['label' => 'About Us', 'url' => '/about', 'active' => 'about'],
                         ['label' => 'Dairy Farming', 'url' => '/dairy', 'active' => 'dairy'],
                         ['label' => 'Livestock & Animal Care', 'url' => '/livestock', 'active' => 'livestock'],
