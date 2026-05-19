@@ -39,10 +39,10 @@
 
     <!-- Header/Navigation -->
     <header class="bg-white/95 backdrop-blur-xl shadow-[0_10px_30px_rgba(2,43,16,0.08)] sticky top-0 z-50 border-b border-primary-100">
-        <div class="w-full px-3 sm:px-4 lg:px-6">
-            <div class="flex justify-between lg:justify-start items-center min-h-24 gap-5">
+        <div class="w-full px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
-                <a href="{{ url('/') }}" class="flex items-center gap-3 shrink-0 lg:w-[245px] xl:w-[265px]">
+                <a href="{{ url('/') }}" class="flex items-center gap-3 shrink-0">
                     <div class="w-11 h-11 bg-gradient-to-br from-primary-500 to-primary-800 rounded-full flex items-center justify-center shadow-lg shadow-primary-700/20 ring-2 ring-primary-100">
                         <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
@@ -71,18 +71,6 @@
                     ];
                 @endphp
 
-                <!-- Desktop Navigation -->
-                <nav class="hidden lg:block flex-1">
-                    <div class="grid grid-cols-6 items-stretch gap-x-3 xl:gap-x-4 gap-y-3">
-                        @foreach ($menuItems as $item)
-                            @php
-                                $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
-                            @endphp
-                            <a href="{{ url($item['url']) }}" class="flex min-h-8 items-center justify-center text-center text-[11px] xl:text-xs font-semibold leading-tight rounded-md px-1.5 transition-colors {{ $isActive ? 'text-primary-600 bg-primary-50 ring-1 ring-primary-100' : 'text-gray-700 hover:text-primary-500 hover:bg-primary-50' }}">{{ $item['label'] }}</a>
-                        @endforeach
-                    </div>
-                </nav>
-
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
                     <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -91,6 +79,20 @@
                 </button>
             </div>
         </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:block bg-primary-900">
+            <div class="w-full px-4 sm:px-6 lg:px-8">
+                <div class="flex min-h-12 items-center justify-center gap-3 xl:gap-5">
+                    @foreach ($menuItems as $item)
+                        @php
+                            $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
+                        @endphp
+                        <a href="{{ url($item['url']) }}" class="relative flex min-h-12 items-center whitespace-nowrap text-[10px] xl:text-xs font-bold text-white transition-colors hover:text-gold-300 {{ $isActive ? 'text-gold-300 after:absolute after:left-0 after:right-0 after:bottom-0 after:h-0.5 after:bg-gold-300' : '' }}">{{ $item['label'] }}</a>
+                    @endforeach
+                </div>
+            </div>
+        </nav>
 
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
