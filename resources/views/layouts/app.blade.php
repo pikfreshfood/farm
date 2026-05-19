@@ -17,6 +17,175 @@
     <style>
         .font-serif { font-family: 'Playfair Display', Georgia, serif; }
         .font-sans { font-family: 'Inter', system-ui, sans-serif; }
+        .site-header-inner {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+            min-height: 86px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+        }
+        .site-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            text-decoration: none;
+        }
+        .site-brand-mark {
+            width: 48px;
+            height: 48px;
+            border-radius: 999px;
+            background: linear-gradient(135deg, #22a447, #075b25);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 12px 24px rgba(7, 91, 37, 0.22);
+            border: 2px solid rgba(34, 164, 71, 0.15);
+        }
+        .site-brand-title {
+            color: #075b25;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 0.95;
+            margin: 0;
+        }
+        .site-brand-subtitle {
+            display: block;
+            margin-top: 6px;
+            color: #64748b;
+            font-size: 11px;
+            line-height: 1;
+            letter-spacing: 0;
+        }
+        .site-nav {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            white-space: nowrap;
+        }
+        .site-nav-link,
+        .site-nav-more-button {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            min-height: 38px;
+            color: #334155;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+            border: 0;
+            background: transparent;
+            cursor: pointer;
+            transition: color 160ms ease;
+        }
+        .site-nav-link:hover,
+        .site-nav-more-button:hover {
+            color: #16803a;
+        }
+        .site-nav-link.is-active {
+            color: #16803a;
+        }
+        .site-nav-link.is-active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 4px;
+            height: 2px;
+            border-radius: 999px;
+            background: #16803a;
+        }
+        .site-nav-more {
+            position: relative;
+        }
+        .site-nav-dropdown {
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            z-index: 60;
+            width: 280px;
+            padding: 8px;
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(6px);
+            transition: opacity 160ms ease, transform 160ms ease, visibility 160ms ease;
+        }
+        .site-nav-more:hover .site-nav-dropdown,
+        .site-nav-more:focus-within .site-nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .site-nav-dropdown-link {
+            display: block;
+            padding: 10px 12px;
+            border-radius: 8px;
+            color: #334155;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: background 160ms ease, color 160ms ease;
+        }
+        .site-nav-dropdown-link:hover,
+        .site-nav-dropdown-link.is-active {
+            background: #ecfdf3;
+            color: #16803a;
+        }
+        .site-nav-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            padding: 0 16px;
+            border-radius: 8px;
+            background: #16803a;
+            color: #fff;
+            font-size: 13px;
+            font-weight: 800;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(22, 128, 58, 0.18);
+            transition: background 160ms ease, transform 160ms ease;
+        }
+        .site-nav-cta:hover {
+            background: #0f6a2f;
+            transform: translateY(-1px);
+        }
+        @media (max-width: 1180px) {
+            .site-header-inner {
+                gap: 18px;
+                padding: 0 18px;
+            }
+            .site-nav {
+                gap: 12px;
+            }
+            .site-nav-link,
+            .site-nav-more-button,
+            .site-nav-cta {
+                font-size: 12px;
+            }
+            .site-brand-title {
+                font-size: 17px;
+            }
+        }
+        @media (max-width: 1023px) {
+            .site-header-inner {
+                min-height: 80px;
+            }
+            .site-nav {
+                display: none;
+            }
+        }
     </style>
     
     @stack('styles')
@@ -39,18 +208,17 @@
 
     <!-- Header/Navigation -->
     <header class="bg-white/95 backdrop-blur-xl shadow-[0_10px_30px_rgba(2,43,16,0.08)] sticky top-0 z-50 border-b border-primary-100">
-        <div class="w-full px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+        <div class="site-header-inner">
                 <!-- Logo -->
-                <a href="{{ url('/') }}" class="flex items-center gap-3 shrink-0">
-                    <div class="w-11 h-11 bg-gradient-to-br from-primary-500 to-primary-800 rounded-full flex items-center justify-center shadow-lg shadow-primary-700/20 ring-2 ring-primary-100">
-                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <a href="{{ url('/') }}" class="site-brand">
+                    <div class="site-brand-mark">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <div class="min-w-0">
-                        <h1 class="text-lg font-bold text-primary-700 font-serif leading-none">CROSBY FARM<br>& INVESTMENTS</h1>
-                        <span class="block text-[11px] text-gray-500 leading-tight mt-1">FOUNDED BY ANDRE CROSBY</span>
+                    <div>
+                        <h1 class="site-brand-title">CROSBY FARM<br>& INVESTMENTS</h1>
+                        <span class="site-brand-subtitle">FOUNDED BY ANDRE CROSBY</span>
                     </div>
                 </a>
 
@@ -71,28 +239,43 @@
                     ];
                 @endphp
 
+                <!-- Desktop Navigation -->
+                <nav class="site-nav">
+                    @foreach (array_slice($menuItems, 0, 6) as $item)
+                        @php
+                            $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
+                        @endphp
+                        <a href="{{ url($item['url']) }}" class="site-nav-link {{ $isActive ? 'is-active' : '' }}">{{ $item['label'] }}</a>
+                    @endforeach
+
+                    <div class="site-nav-more">
+                        <button class="site-nav-more-button" type="button">
+                            More
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div class="site-nav-dropdown">
+                            @foreach (array_slice($menuItems, 6, 5) as $item)
+                                @php
+                                    $isActive = request()->is($item['active']);
+                                @endphp
+                                <a href="{{ url($item['url']) }}" class="site-nav-dropdown-link {{ $isActive ? 'is-active' : '' }}">{{ $item['label'] }}</a>
+                            @endforeach
+                        </div>
+                    </div>
+
+                    @php
+                        $contactItem = $menuItems[11];
+                    @endphp
+                    <a href="{{ url($contactItem['url']) }}" class="site-nav-cta">{{ $contactItem['label'] }}</a>
+                </nav>
+
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
                     <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
-            </div>
         </div>
-
-        <!-- Desktop Navigation -->
-        <nav class="hidden lg:block bg-primary-900">
-            <div class="w-full px-4 sm:px-6 lg:px-8">
-                <div class="flex min-h-12 items-center justify-center gap-3 xl:gap-5">
-                    @foreach ($menuItems as $item)
-                        @php
-                            $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
-                        @endphp
-                        <a href="{{ url($item['url']) }}" class="relative flex min-h-12 items-center whitespace-nowrap text-[10px] xl:text-xs font-bold text-white transition-colors hover:text-gold-300 {{ $isActive ? 'text-gold-300 after:absolute after:left-0 after:right-0 after:bottom-0 after:h-0.5 after:bg-gold-300' : '' }}">{{ $item['label'] }}</a>
-                    @endforeach
-                </div>
-            </div>
-        </nav>
 
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
