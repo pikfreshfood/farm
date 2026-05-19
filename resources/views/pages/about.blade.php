@@ -25,7 +25,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
                 <div class="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?w=800&q=80" alt="Our Story" class="w-full h-[400px] object-cover">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Commercial farm fields" class="w-full h-[400px] object-cover">
                 </div>
             </div>
             <div class="animate-on-scroll">
