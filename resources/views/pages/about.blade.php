@@ -10,9 +10,9 @@
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">About Us</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Our story of generational farming excellence</p>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">A commercial agricultural and investment enterprise founded by Andre Crosby</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
             <span class="text-white">About Us</span>
         </nav>
@@ -30,8 +30,9 @@
             </div>
             <div class="animate-on-scroll">
                 <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Our Story</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">Heritage Valley Farms was founded on generations of agricultural tradition. Farming has been passed down through our family for decades, beginning with our grandparents who believed the land should not only feed families but also create opportunity and security for future generations.</p>
-                <p class="text-gray-600 leading-relaxed">Today, we continue that legacy using modern farming technologies while preserving traditional values of hard work, integrity, and sustainability.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">Welcome to Crosby Farm and Investments, a large-scale commercial agricultural and investment enterprise dedicated to sustainable farming, crop production, livestock rearing, dairy farming, and agricultural wealth creation across the United States.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">Founded by Andre Crosby, the company was established with a long-term vision of contributing to food production, economic growth, retirement investment opportunities, and agricultural sustainability through modern and integrated farming systems.</p>
+                <p class="text-gray-600 leading-relaxed">We combine advanced farming technology, responsible agricultural practices, and investment-driven operations to create a profitable and sustainable agricultural ecosystem for families, businesses, organizations, and retirement-focused investors.</p>
             </div>
         </div>
     </div>
@@ -49,21 +50,21 @@
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
                 </div>
                 <h3 class="text-xl font-bold text-primary-700 mb-3">Our Vision</h3>
-                <p class="text-gray-600">To become one of America's leading sustainable dairy and agricultural investment farms.</p>
+                <p class="text-gray-600">To become a leading agricultural and investment company in the United States recognized for excellence in crop production, dairy farming, livestock management, sustainable agriculture, and retirement-focused investment opportunities.</p>
             </div>
             <div class="bg-white rounded-xl p-8 shadow-sm text-center animate-on-scroll" style="animation-delay: 0.1s">
                 <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                 </div>
                 <h3 class="text-xl font-bold text-primary-700 mb-3">Our Mission</h3>
-                <p class="text-gray-600">To help feed the United States through quality dairy and livestock farming while empowering individuals to build wealth.</p>
+                <p class="text-gray-600">To provide high-quality agricultural products through sustainable crop production, dairy farming, and livestock management while creating profitable investment opportunities that support food security, economic development, and long-term financial growth for individuals and families.</p>
             </div>
             <div class="bg-white rounded-xl p-8 shadow-sm text-center animate-on-scroll" style="animation-delay: 0.2s">
                 <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
                 </div>
-                <h3 class="text-xl font-bold text-primary-700 mb-3">Our Promise</h3>
-                <p class="text-gray-600">We commit to ethical practices, sustainable farming, and delivering consistent returns to our valued investors.</p>
+                <h3 class="text-xl font-bold text-primary-700 mb-3">Our Focus</h3>
+                <p class="text-gray-600">We believe agriculture is one of the strongest foundations for economic stability and future security.</p>
             </div>
         </div>
     </div>
@@ -162,8 +163,8 @@
 <!-- CTA -->
 <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Join Our Farming Legacy</h2>
-        <p class="text-gray-600 mb-8">Become part of a trusted agricultural enterprise that's feeding America and building wealth for investors.</p>
+        <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Partner With Crosby Farm and Investments</h2>
+        <p class="text-gray-600 mb-8">Become part of a trusted agricultural enterprise focused on food production, economic growth, and long-term investment opportunity.</p>
         <a href="{{ url('/contact') }}" class="btn-primary">Get In Touch</a>
     </div>
 </section>

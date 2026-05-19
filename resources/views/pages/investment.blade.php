@@ -9,9 +9,9 @@
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Investment Plans</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Agricultural investment opportunities for every budget</p>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Invest in agriculture. Build long-term wealth.</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
             <span class="text-white">Investment Plans</span>
         </nav>
@@ -21,8 +21,8 @@
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="section-title animate-on-scroll">
-            <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Agricultural Investment Opportunities</h2>
-            <p class="text-gray-600">Investors can participate in dairy cow ownership, crop production partnerships, livestock expansion, and farm infrastructure growth.</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Invest in Agriculture. Build Long-Term Wealth.</h2>
+            <p class="text-gray-600">Crosby Farm and Investments offers strategic agricultural investment opportunities for individuals, private investors, and organizations seeking stable long-term returns through commercial farming and agricultural production.</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <div class="text-center p-6 bg-primary-50 rounded-xl animate-on-scroll">
@@ -30,28 +30,28 @@
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <h4 class="font-bold text-primary-700 mb-2">Retirement Planning</h4>
-                <p class="text-gray-600 text-sm">Secure your future with stable agricultural investments.</p>
+                <p class="text-gray-600 text-sm">Build retirement-focused investments through productive agricultural operations.</p>
             </div>
             <div class="text-center p-6 bg-primary-50 rounded-xl animate-on-scroll" style="animation-delay: 0.1s">
                 <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <h4 class="font-bold text-primary-700 mb-2">Passive Income</h4>
-                <p class="text-gray-600 text-sm">Generate consistent returns from farming operations.</p>
+                <p class="text-gray-600 text-sm">Participate in income-generating farming operations over time.</p>
             </div>
             <div class="text-center p-6 bg-primary-50 rounded-xl animate-on-scroll" style="animation-delay: 0.2s">
                 <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
                 </div>
-                <h4 class="font-bold text-primary-700 mb-2">Wealth Preservation</h4>
-                <p class="text-gray-600 text-sm">Protect your assets with real agricultural investments.</p>
+                <h4 class="font-bold text-primary-700 mb-2">Agricultural Investors</h4>
+                <p class="text-gray-600 text-sm">Participate in crop, dairy, livestock, and infrastructure-backed opportunities.</p>
             </div>
             <div class="text-center p-6 bg-primary-50 rounded-xl animate-on-scroll" style="animation-delay: 0.3s">
                 <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-                <h4 class="font-bold text-primary-700 mb-2">Farm Growth</h4>
-                <p class="text-gray-600 text-sm">Partner with us to expand sustainable farming.</p>
+                <h4 class="font-bold text-primary-700 mb-2">Family Wealth Preservation</h4>
+                <p class="text-gray-600 text-sm">Support sustainable wealth-building through agriculture and food production.</p>
             </div>
         </div>
 
@@ -130,6 +130,60 @@
     </div>
 </section>
 
+<section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-10">
+            <div class="animate-on-scroll">
+                <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Areas of Investment</h2>
+                <div class="grid sm:grid-cols-2 gap-3">
+                    @php
+                        $areas = [
+                            'Crop Production Expansion',
+                            'Dairy Farm Development',
+                            'Livestock Farming Projects',
+                            'Agricultural Equipment Acquisition',
+                            'Greenhouse Farming',
+                            'Irrigation Systems',
+                            'Farm Infrastructure Development',
+                            'Food Processing & Distribution',
+                            'Retirement Agricultural Investment Programs',
+                        ];
+                    @endphp
+
+                    @foreach ($areas as $area)
+                        <div class="flex items-center gap-3 bg-white rounded-lg p-4 border border-primary-100">
+                            <svg class="w-5 h-5 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            <span class="text-sm font-semibold text-gray-700">{{ $area }}</span>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+            <div class="animate-on-scroll">
+                <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Why Invest With Us</h2>
+                <div class="space-y-4">
+                    @php
+                        $reasons = [
+                            ['title' => 'Strong Agricultural Market Demand', 'text' => 'Food and dairy products remain essential commodities with increasing demand locally and internationally.'],
+                            ['title' => 'Diversified Operations', 'text' => 'Crop farming, dairy production, and livestock management create multiple revenue streams and operational stability.'],
+                            ['title' => 'Sustainable Growth Strategy', 'text' => 'We focus on long-term expansion through responsible farming methods, innovation, and strategic planning.'],
+                            ['title' => 'Professional Management', 'text' => 'Structured agricultural management systems support productivity, accountability, and growth.'],
+                            ['title' => 'Investor-Focused Partnerships', 'text' => 'We are committed to transparency, responsible management, and mutually beneficial investment relationships.'],
+                        ];
+                    @endphp
+
+                    @foreach ($reasons as $reason)
+                        <div class="bg-white rounded-lg p-5 border border-primary-100">
+                            <h3 class="font-bold text-primary-700 mb-1">{{ $reason['title'] }}</h3>
+                            <p class="text-gray-600 text-sm">{{ $reason['text'] }}</p>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="py-16 bg-primary-600">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center text-white">
@@ -144,7 +198,7 @@
 <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Ready to Start Your Agricultural Investment?</h2>
-        <p class="text-gray-600 mb-8">Contact us today to discuss which investment plan is right for you.</p>
+        <p class="text-gray-600 mb-8">Contact us today to discuss crop production, dairy, livestock, infrastructure, or retirement-focused agricultural investment opportunities.</p>
         <a href="{{ url('/contact') }}" class="btn-primary">Contact Us Now</a>
     </div>
 </section>

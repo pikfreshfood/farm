@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Photo Gallery')
+@section('title', 'Gallery')
 
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
@@ -8,10 +8,10 @@
         <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80" alt="Gallery" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Photo Gallery</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Explore life at Heritage Valley Farms</p>
+        <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Gallery</h1>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Explore crop production, dairy, livestock, machinery, and investment activity at Crosby Farm and Investments</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
             <span class="text-white">Gallery</span>
         </nav>
@@ -37,7 +37,7 @@
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Dairy Cows at Pasture</h4>
-                        <p class="text-primary-200 text-sm">Our healthy, grass-fed dairy herd</p>
+                        <p class="text-primary-200 text-sm">Healthy livestock management and dairy production</p>
                     </div>
                 </div>
             </div>
@@ -45,8 +45,8 @@
                 <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80" alt="Farm Landscape" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Heritage Valley Landscape</h4>
-                        <p class="text-primary-200 text-sm">Beautiful valley views</p>
+                        <h4 class="text-white font-semibold">Commercial Farm Landscape</h4>
+                        <p class="text-primary-200 text-sm">Large-scale agricultural operations</p>
                     </div>
                 </div>
             </div>
@@ -96,11 +96,11 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="livestock" style="animation-delay: 0.7s">
-                <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80" alt="Peacock" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Poultry and specialty livestock" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Peacock Conservation</h4>
-                        <p class="text-primary-200 text-sm">Exotic bird programs</p>
+                        <h4 class="text-white font-semibold">Poultry & Specialty Livestock</h4>
+                        <p class="text-primary-200 text-sm">Diversified livestock systems</p>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                 <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Sunset Farm" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Sunset Over the Valley</h4>
+                        <h4 class="text-white font-semibold">Sunset Over the Farm</h4>
                         <p class="text-primary-200 text-sm">End of a productive day</p>
                     </div>
                 </div>

@@ -9,11 +9,11 @@
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Retirement Investment Program</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Secure your future through agriculture</p>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Secure your future through agriculture and long-term financial planning</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
-            <span class="text-white">Retirement Program</span>
+            <span class="text-white">Retirement Investment Program</span>
         </nav>
     </div>
 </section>
@@ -23,10 +23,10 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
                 <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Secure Your Future Through Agriculture</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">Our retirement investment program allows individuals to generate passive income through proven agricultural investments. Build a stable financial future backed by real farming assets.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">Crosby Farm and Investments provides agricultural investment opportunities designed for individuals planning for retirement and long-term financial security. Our model allows investors to participate in income-generating farming operations while building sustainable wealth over time.</p>
                 <h3 class="text-xl font-bold text-primary-700 mb-4">Investment Options:</h3>
                 <ul class="space-y-3">
-                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Dairy cow ownership programs</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Dairy farm development programs</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Crop production investments</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Livestock expansion programs</span></li>
                 </ul>
@@ -53,7 +53,7 @@
             <div class="text-center animate-on-scroll" style="animation-delay: 0.1s">
                 <div class="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">2</div>
                 <h4 class="font-bold text-primary-700 mb-2">Invest</h4>
-                <p class="text-gray-600 text-sm">Your investment goes into productive operations.</p>
+                <p class="text-gray-600 text-sm">Invest in dairy or crop production.</p>
             </div>
             <div class="text-center animate-on-scroll" style="animation-delay: 0.2s">
                 <div class="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold shadow-lg">3</div>
@@ -73,24 +73,24 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="section-title animate-on-scroll">
             <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Retirement Benefits</h2>
-            <p class="text-gray-600">Why choose agricultural retirement investments</p>
+            <p class="text-gray-600">Long-term benefits for retirement-focused agricultural investors</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="bg-gray-50 rounded-xl p-6 animate-on-scroll">
-                <h3 class="font-bold text-primary-700 mb-2">Stable Agricultural Assets</h3>
-                <p class="text-gray-600 text-sm">Your investment is backed by real, productive farming assets that hold intrinsic value.</p>
+                <h3 class="font-bold text-primary-700 mb-2">Long-Term Passive Income Potential</h3>
+                <p class="text-gray-600 text-sm">Participate in productive farming operations designed for long-term income opportunities.</p>
             </div>
             <div class="bg-gray-50 rounded-xl p-6 animate-on-scroll" style="animation-delay: 0.1s">
-                <h3 class="font-bold text-primary-700 mb-2">Long-Term Income</h3>
-                <p class="text-gray-600 text-sm">Agricultural investments provide consistent returns over decades, perfect for retirement.</p>
+                <h3 class="font-bold text-primary-700 mb-2">Diversified Agricultural Portfolio</h3>
+                <p class="text-gray-600 text-sm">Crop, dairy, livestock, and infrastructure projects help diversify agricultural exposure.</p>
             </div>
             <div class="bg-gray-50 rounded-xl p-6 animate-on-scroll" style="animation-delay: 0.2s">
-                <h3 class="font-bold text-primary-700 mb-2">Sustainable Model</h3>
-                <p class="text-gray-600 text-sm">Our farming operations are built on sustainable practices that ensure long-term viability.</p>
+                <h3 class="font-bold text-primary-700 mb-2">Sustainable Wealth Accumulation</h3>
+                <p class="text-gray-600 text-sm">Agricultural growth supports long-term wealth-building through essential food production.</p>
             </div>
             <div class="bg-gray-50 rounded-xl p-6 animate-on-scroll" style="animation-delay: 0.3s">
-                <h3 class="font-bold text-primary-700 mb-2">Real Asset-Backed</h3>
-                <p class="text-gray-600 text-sm">Unlike paper investments, your money is tied to tangible farming operations.</p>
+                <h3 class="font-bold text-primary-700 mb-2">Structured Partnerships</h3>
+                <p class="text-gray-600 text-sm">Our investment relationships are structured around transparency, accountability, and growth.</p>
             </div>
         </div>
     </div>

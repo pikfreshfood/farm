@@ -11,15 +11,20 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Blog & Farm Updates</h1>
         <p class="text-primary-200 text-lg max-w-2xl mx-auto">Latest news, insights, and stories from the farm</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
-            <span class="text-white">Blog</span>
+            <span class="text-white">Blog & Farm Updates</span>
         </nav>
     </div>
 </section>
 
 <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="section-title animate-on-scroll">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Suggested Blog Topics</h2>
+            <p class="text-gray-600">Dairy farming insights, livestock care tips, sustainable agriculture, farming technology, agricultural investment education, and seasonal farm updates.</p>
+        </div>
+
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             @php
             $posts = [
@@ -40,8 +45,8 @@
                 </div>
                 <div class="p-6">
                     <div class="flex items-center gap-4 text-sm text-gray-500 mb-3">
-                        <span>📅 {{ $post['date'] }}</span>
-                        <span>⏱️ {{ $post['read'] }}</span>
+                        <span>{{ $post['date'] }}</span>
+                        <span>{{ $post['read'] }}</span>
                     </div>
                     <h3 class="text-lg font-bold text-primary-700 mb-3">{{ $post['title'] }}</h3>
                     <p class="text-gray-600 text-sm mb-4">{{ $post['excerpt'] }}</p>

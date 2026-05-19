@@ -9,11 +9,11 @@
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Livestock & Animal Care</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Professional care and breeding of diverse farm animals</p>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Responsible livestock management for productivity, animal health, and sustainable growth</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
-            <span class="text-white">Livestock</span>
+            <span class="text-white">Livestock & Animal Care</span>
         </nav>
     </div>
 </section>
@@ -22,32 +22,28 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="section-title animate-on-scroll">
             <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Animals We Rear</h2>
-            <p class="text-gray-600">Diverse livestock for sustainable farming</p>
+            <p class="text-gray-600">Cattle, goats, sheep, poultry, farm dogs, and other agricultural animals</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80" alt="Dairy Cows" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
-                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Dairy Cows</h3><p class="text-gray-600 text-sm">Raised for premium milk production and breeding with the best care and nutrition.</p></div>
+                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80" alt="Cattle" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Cattle</h3><p class="text-gray-600 text-sm">Managed for dairy production, breeding, and long-term agricultural productivity.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.1s">
                 <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1524024973431-2ad916746264?w=600&q=80" alt="Goats" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
                 <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Goats</h3><p class="text-gray-600 text-sm">Healthy goat farming for milk and agricultural breeding programs.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.2s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Dogs" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
-                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Dogs</h3><p class="text-gray-600 text-sm">Farm security and professional breeding programs with experienced handlers.</p></div>
+                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Farm Dogs" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Farm Dogs</h3><p class="text-gray-600 text-sm">Farm security and responsible care programs with experienced handlers.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.3s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?w=600&q=80" alt="Peacocks" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
-                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Peacocks</h3><p class="text-gray-600 text-sm">Exotic bird rearing and conservation programs for these beautiful creatures.</p></div>
+                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Poultry" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Poultry</h3><p class="text-gray-600 text-sm">Poultry systems that support food production and diversified farm income.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.4s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Chickens" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
-                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Chickens</h3><p class="text-gray-600 text-sm">Free-range chicken farming for eggs and sustainable poultry production.</p></div>
-            </div>
-            <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.5s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Sheep" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
-                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Sheep</h3><p class="text-gray-600 text-sm">Quality sheep farming for wool and meat production with ethical practices.</p></div>
+                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Sheep and Other Agricultural Animals" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Sheep & Other Agricultural Animals</h3><p class="text-gray-600 text-sm">Sheep and specialty livestock raised through environmentally responsible methods.</p></div>
             </div>
         </div>
     </div>
@@ -58,7 +54,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
                 <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Animal Welfare</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">We prioritize the health and happiness of all our animals. Our comprehensive animal welfare program ensures every animal receives the care they deserve.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">Our livestock systems prioritize animal health, productivity, and environmentally responsible farming methods. Every animal receives structured care designed for healthy growth and efficient farm operations.</p>
                 <ul class="space-y-3">
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Regular veterinary care and health monitoring</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Spacious grazing fields for natural movement</span></li>

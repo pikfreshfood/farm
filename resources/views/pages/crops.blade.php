@@ -11,7 +11,7 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Crop Production</h1>
         <p class="text-primary-200 text-lg max-w-2xl mx-auto">Sustainable cultivation for food and livestock nutrition</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
             <span class="text-white">Crop Production</span>
         </nav>
@@ -23,13 +23,15 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
                 <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Sustainable Crop Farming</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">We cultivate crops that support both human food supply and livestock nutrition. Our 5,000+ acres of managed land produce high-quality yields using sustainable farming practices.</p>
+                <p class="text-gray-600 leading-relaxed mb-6">We specialize in large-scale crop cultivation using modern agricultural techniques to maximize productivity, quality, and sustainability. Our crop production systems are designed to meet growing food demands while supporting long-term agricultural development.</p>
                 <h3 class="text-xl font-bold text-primary-700 mb-4">Crops We Grow</h3>
                 <ul class="space-y-3">
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Hay - Premium quality for livestock feed</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Corn - Versatile crop for food and feed</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Soybeans - Protein-rich crop for multiple uses</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Wheat - Essential grain for food production</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Vegetables - Seasonal produce for commercial supply</span></li>
+                    <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Fruits - Seasonal agricultural produce</span></li>
                     <li class="flex items-center gap-3"><svg class="w-5 h-5 text-primary-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span class="text-gray-600">Animal feed crops - Specialized nutrition blends</span></li>
                 </ul>
             </div>

@@ -9,9 +9,9 @@
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Contact Us</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Get in touch with our team</p>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Interested in partnering or investing with us?</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
             <span class="text-white">Contact Us</span>
         </nav>
@@ -25,7 +25,7 @@
             <div class="lg:col-span-2 min-w-0">
                 <div class="bg-primary-600 rounded-2xl p-6 sm:p-8 text-white h-full min-w-0">
                     <h3 class="text-2xl font-bold text-gold-300 mb-4">Get In Touch</h3>
-                    <p class="text-primary-200 mb-8">Have questions about our farm, investment opportunities, or dairy products? We'd love to hear from you.</p>
+                    <p class="text-primary-200 mb-8">We welcome inquiries from private investors, agricultural partners, retirement investors, food distributors, commercial buyers, and agricultural organizations.</p>
                     
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
@@ -34,7 +34,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-1">Farm Location</h4>
-                                <p class="text-primary-200 text-sm">Heritage Valley, Rural Route 123<br>United States</p>
+                                <p class="text-primary-200 text-sm">Crosby Farm and Investments<br>United States</p>
                             </div>
                         </div>
                         
@@ -54,7 +54,7 @@
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-1">Email Address</h4>
-                                <p class="text-primary-200 text-sm">info@heritagevalleyfarms.com<br>invest@heritagevalleyfarms.com</p>
+                                <p class="text-primary-200 text-sm">info@crosbyfarminvestments.com<br>invest@crosbyfarminvestments.com</p>
                             </div>
                         </div>
                         
@@ -99,8 +99,12 @@
                                     <option value="classic">Classic Plan ($15,000)</option>
                                     <option value="gold">Gold Plan ($50,000)</option>
                                     <option value="premium">Premium Plan ($100,000+)</option>
-                                    <option value="retirement">Retirement Program</option>
-                                    <option value="dairy">Dairy Products</option>
+                                    <option value="retirement">Retirement Investment Program</option>
+                                    <option value="crop">Crop Production Expansion</option>
+                                    <option value="dairy">Dairy Farm Development</option>
+                                    <option value="livestock">Livestock Farming Projects</option>
+                                    <option value="equipment">Agricultural Equipment Acquisition</option>
+                                    <option value="distribution">Food Processing & Distribution</option>
                                     <option value="other">Other Inquiry</option>
                                 </select>
                             </div>
@@ -109,7 +113,7 @@
                             <label class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
                             <textarea rows="5" placeholder="Tell us how we can help you" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-all resize-none"></textarea>
                         </div>
-                        <button type="submit" class="btn-primary w-full justify-center">Send Message →</button>
+                        <button type="submit" class="btn-primary w-full justify-center">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -129,7 +133,7 @@
             <div class="absolute inset-0 bg-primary-700/80 flex items-center justify-center">
                 <div class="text-center text-white">
                     <h3 class="text-3xl font-bold font-serif mb-4">Farm Tours Available</h3>
-                    <p class="text-primary-200 text-lg mb-8">Experience Heritage Valley Farms in person</p>
+                    <p class="text-primary-200 text-lg mb-8">Experience Crosby Farm and Investments in person</p>
                     <a href="{{ url('/contact') }}" class="bg-gold-400 hover:bg-gold-500 text-primary-700 px-8 py-4 rounded-lg font-bold transition-colors">Book a Tour</a>
                 </div>
             </div>

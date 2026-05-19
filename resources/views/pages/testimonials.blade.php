@@ -11,7 +11,7 @@
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Testimonials</h1>
         <p class="text-primary-200 text-lg max-w-2xl mx-auto">What our investors and partners say about us</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
             <span class="text-white">Testimonials</span>
         </nav>
@@ -23,15 +23,15 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             @php
             $testimonials = [
-                ['name' => 'John M.', 'role' => 'Gold Plan Investor', 'text' => 'The farm investment program has given me peace of mind for retirement. The returns have been consistent and the team is transparent about operations.', 'initial' => 'J'],
-                ['name' => 'Sarah T.', 'role' => 'Community Partner', 'text' => 'I love how the farm combines family tradition with modern agriculture. Visiting the farm was an eye-opening experience for my entire family.', 'initial' => 'S'],
-                ['name' => 'Michael R.', 'role' => 'Dairy Investor', 'text' => 'The passive dairy income opportunity has been excellent. I own three cows and the monthly returns exceed my expectations.', 'initial' => 'M'],
-                ['name' => 'Robert K.', 'role' => 'Retirement Program', 'text' => 'Investing in Heritage Valley Farms gave me steady retirement income while supporting American agriculture. It\'s a win-win.', 'initial' => 'R'],
+                ['name' => 'John M.', 'role' => 'Gold Plan Investor', 'text' => 'The farm investment program has given me peace of mind for retirement.', 'initial' => 'J'],
+                ['name' => 'Sarah T.', 'role' => 'Agricultural Partner', 'text' => 'I love how the company combines modern farming technology with sustainable agriculture.', 'initial' => 'S'],
+                ['name' => 'Michael R.', 'role' => 'Dairy Investor', 'text' => 'The passive dairy income opportunity has been excellent.', 'initial' => 'M'],
+                ['name' => 'Robert K.', 'role' => 'Retirement Investor', 'text' => 'Crosby Farm and Investments gave me a clear way to participate in agriculture while planning for long-term security.', 'initial' => 'R'],
                 ['name' => 'Linda P.', 'role' => 'Premium Plan Investor', 'text' => 'The transparency and regular updates from the farm management team give me confidence in my investment decisions.', 'initial' => 'L'],
                 ['name' => 'David W.', 'role' => 'Classic Plan Investor', 'text' => 'As a first-time agricultural investor, I was nervous. The team walked me through everything and the returns have been fantastic.', 'initial' => 'D'],
                 ['name' => 'Emily S.', 'role' => 'Regular Plan Investor', 'text' => 'The farm tour was incredible. Seeing the operations firsthand made me increase my investment. Highly recommend!', 'initial' => 'E'],
-                ['name' => 'Thomas B.', 'role' => 'Dairy Partner', 'text' => 'Heritage Valley Farms has been a reliable partner for our dairy supply chain. Quality and consistency are their hallmarks.', 'initial' => 'T'],
-                ['name' => 'Amanda H.', 'role' => 'Retirement Investor', 'text' => 'My retirement portfolio is now diversified with agricultural assets thanks to Heritage Valley. Best decision I\'ve made.', 'initial' => 'A'],
+                ['name' => 'Thomas B.', 'role' => 'Dairy Partner', 'text' => 'Crosby Farm and Investments has been a reliable partner for dairy supply and agricultural production.', 'initial' => 'T'],
+                ['name' => 'Amanda H.', 'role' => 'Retirement Investor', 'text' => 'My retirement portfolio is now connected to diversified agricultural assets through Crosby Farm and Investments.', 'initial' => 'A'],
             ];
             @endphp
             

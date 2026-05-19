@@ -9,11 +9,11 @@
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Sustainability & Mission</h1>
-        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Feeding America responsibly for future generations</p>
+        <p class="text-primary-200 text-lg max-w-2xl mx-auto">Sustainable agricultural development, responsible management, and long-term growth</p>
         <nav class="mt-6 flex items-center justify-center gap-2 text-sm">
-            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Home</a>
+            <a href="{{ url('/') }}" class="text-primary-200 hover:text-white transition-colors">Homepage</a>
             <span class="text-primary-300">/</span>
-            <span class="text-white">Sustainability</span>
+            <span class="text-white">Sustainability & Mission</span>
         </nav>
     </div>
 </section>
@@ -22,9 +22,9 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
-                <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Feeding America Responsibly</h2>
-                <p class="text-gray-600 leading-relaxed mb-6">We believe agriculture is the backbone of America. Our commitment is to provide healthy food while protecting the environment for future generations.</p>
-                <p class="text-gray-600 leading-relaxed">Every decision we make is guided by our responsibility to the land, the animals, and the communities we serve. Sustainability isn't just a buzzword for us—it's a way of life.</p>
+                <h2 class="text-3xl font-bold text-primary-600 font-serif mb-6">Our Commitment</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">At Crosby Farm and Investments, we are committed to sustainable agricultural development, responsible operational management, transparency, accountability, long-term business growth, investor confidence, and supporting food security.</p>
+                <p class="text-gray-600 leading-relaxed">Every decision we make is guided by our responsibility to the land, the animals, our investors, and the communities connected to the food supply chain.</p>
             </div>
             <div class="animate-on-scroll">
                 <div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=800&q=80" alt="Sustainable Farming" class="w-full h-[400px] object-cover"></div>
@@ -37,7 +37,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="section-title animate-on-scroll">
             <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif">Sustainability Practices</h2>
-            <p class="text-gray-600">How we protect our environment while feeding America</p>
+            <p class="text-gray-600">How we protect our environment while building resilient agricultural operations</p>
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white rounded-xl p-6 shadow-sm animate-on-scroll">

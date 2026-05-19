@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Heritage Valley Farms') - Family-Owned & Operated for Generations</title>
-    <meta name="description" content="@yield('meta_description', 'A family-owned U.S. dairy and livestock farm committed to sustainable agriculture, healthy food production, and profitable agricultural investments.')">
+    <title>@yield('title', 'Crosby Farm and Investments') - Feeding Tomorrow, Building Wealth for Generations</title>
+    <meta name="description" content="@yield('meta_description', 'A large-scale commercial agricultural and investment enterprise dedicated to sustainable farming, crop production, livestock rearing, dairy farming, and agricultural wealth creation across the United States.')">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,33 +49,36 @@
                         </svg>
                     </div>
                     <div>
-                        <h1 class="text-xl font-bold text-primary-700 font-serif leading-none">HERITAGE<br>VALLEY FARMS</h1>
-                        <span class="text-xs text-gray-500">EST. 1998</span>
+                        <h1 class="text-xl font-bold text-primary-700 font-serif leading-none">CROSBY FARM<br>& INVESTMENTS</h1>
+                        <span class="text-xs text-gray-500">FOUNDED BY ANDRE CROSBY</span>
                     </div>
                 </a>
 
+                @php
+                    $menuItems = [
+                        ['label' => 'Homepage', 'url' => '/', 'active' => '/'],
+                        ['label' => 'About Us', 'url' => '/about', 'active' => 'about'],
+                        ['label' => 'Dairy Farming', 'url' => '/dairy', 'active' => 'dairy'],
+                        ['label' => 'Livestock & Animal Care', 'url' => '/livestock', 'active' => 'livestock'],
+                        ['label' => 'Crop Production', 'url' => '/crops', 'active' => 'crops'],
+                        ['label' => 'Investment Plans', 'url' => '/investment', 'active' => 'investment'],
+                        ['label' => 'Retirement Investment Program', 'url' => '/retirement', 'active' => 'retirement'],
+                        ['label' => 'Sustainability & Mission', 'url' => '/sustainability', 'active' => 'sustainability'],
+                        ['label' => 'Gallery', 'url' => '/gallery', 'active' => 'gallery'],
+                        ['label' => 'Testimonials', 'url' => '/testimonials', 'active' => 'testimonials'],
+                        ['label' => 'Blog & Farm Updates', 'url' => '/blog', 'active' => 'blog'],
+                        ['label' => 'Contact Us', 'url' => '/contact', 'active' => 'contact'],
+                    ];
+                @endphp
+
                 <!-- Desktop Navigation -->
-                <nav class="hidden lg:flex items-center gap-8">
-                    <a href="{{ url('/') }}" class="text-sm font-semibold {{ request()->is('/') ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">Home</a>
-                    <a href="{{ url('/about') }}" class="text-sm font-semibold {{ request()->is('about') ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">About Us</a>
-                    <a href="{{ url('/dairy') }}" class="text-sm font-semibold {{ request()->is('dairy') ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">Dairy Farming</a>
-                    <a href="{{ url('/livestock') }}" class="text-sm font-semibold {{ request()->is('livestock') ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">Livestock & Animal Care</a>
-                    <a href="{{ url('/crops') }}" class="text-sm font-semibold {{ request()->is('crops') ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">Crop Production</a>
-                    <a href="{{ url('/investment') }}" class="text-sm font-semibold {{ request()->is('investment') ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">Investment Plans</a>
-                    <div class="relative group">
-                        <button class="text-sm font-semibold text-gray-700 hover:text-primary-500 transition-colors flex items-center gap-1">
-                            More
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                        </button>
-                        <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <a href="{{ url('/retirement') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-500">Retirement Program</a>
-                            <a href="{{ url('/sustainability') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-500">Sustainability</a>
-                            <a href="{{ url('/gallery') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-500">Gallery</a>
-                            <a href="{{ url('/testimonials') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-500">Testimonials</a>
-                            <a href="{{ url('/blog') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50 hover:text-primary-500">Blog</a>
-                        </div>
-                    </div>
-                    <a href="{{ url('/contact') }}" class="farm-button bg-primary-500 hover:bg-primary-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 hover:-translate-y-0.5">Contact Us</a>
+                <nav class="hidden lg:flex flex-wrap justify-end items-center gap-x-5 gap-y-2 max-w-4xl">
+                    @foreach ($menuItems as $item)
+                        @php
+                            $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
+                        @endphp
+                        <a href="{{ url($item['url']) }}" class="text-xs xl:text-sm font-semibold {{ $isActive ? 'text-primary-500 border-b-2 border-primary-500 pb-1' : 'text-gray-700 hover:text-primary-500' }} transition-colors">{{ $item['label'] }}</a>
+                    @endforeach
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -90,18 +93,12 @@
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
             <div class="px-4 py-4 space-y-2">
-                <a href="{{ url('/') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('/') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Home</a>
-                <a href="{{ url('/about') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('about') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">About Us</a>
-                <a href="{{ url('/dairy') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('dairy') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Dairy Farming</a>
-                <a href="{{ url('/livestock') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('livestock') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Livestock & Animal Care</a>
-                <a href="{{ url('/crops') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('crops') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Crop Production</a>
-                <a href="{{ url('/investment') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('investment') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Investment Plans</a>
-                <a href="{{ url('/retirement') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('retirement') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Retirement Program</a>
-                <a href="{{ url('/sustainability') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('sustainability') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Sustainability</a>
-                <a href="{{ url('/gallery') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('gallery') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Gallery</a>
-                <a href="{{ url('/testimonials') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('testimonials') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Testimonials</a>
-                <a href="{{ url('/blog') }}" class="block px-4 py-2 text-sm font-semibold {{ request()->is('blog') ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">Blog</a>
-                <a href="{{ url('/contact') }}" class="block px-4 py-2 text-sm font-semibold bg-primary-500 text-white rounded-lg text-center mt-4">Contact Us</a>
+                @foreach ($menuItems as $item)
+                    @php
+                        $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
+                    @endphp
+                    <a href="{{ url($item['url']) }}" class="block px-4 py-2 text-sm font-semibold {{ $isActive ? 'text-primary-500 bg-primary-50 rounded-lg' : 'text-gray-700' }}">{{ $item['label'] }}</a>
+                @endforeach
             </div>
         </div>
     </header>
@@ -150,11 +147,19 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold font-serif">HERITAGE VALLEY FARMS</h3>
-                                <span class="text-xs text-primary-200">EST. 1998</span>
+                                <h3 class="text-lg font-bold font-serif">CROSBY FARM AND INVESTMENTS</h3>
+                                <span class="text-xs text-primary-200">FOUNDED BY ANDRE CROSBY</span>
                             </div>
                         </div>
-                        <p class="text-primary-200 text-sm leading-relaxed mb-4">Built on Generations of Farming, Focused on Feeding America, and Creating Sustainable Wealth Through Agriculture.</p>
+                        <p class="text-primary-200 text-sm leading-relaxed mb-4">Feeding Tomorrow, Building Wealth for Generations.</p>
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gold-300 mb-2">Farm Certifications</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="text-xs text-primary-100 bg-white/10 px-3 py-1 rounded-full">Sustainable Farming</span>
+                                <span class="text-xs text-primary-100 bg-white/10 px-3 py-1 rounded-full">Animal Welfare</span>
+                                <span class="text-xs text-primary-100 bg-white/10 px-3 py-1 rounded-full">Quality Dairy</span>
+                            </div>
+                        </div>
                         <div class="flex gap-3">
                             <a href="#" class="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-gold-400 hover:text-primary-600 transition-colors">
                                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
@@ -172,25 +177,19 @@
                     <div>
                         <h4 class="text-lg font-semibold mb-4 text-gold-300">Quick Links</h4>
                         <ul class="space-y-2">
-                            <li><a href="{{ url('/') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Home</a></li>
-                            <li><a href="{{ url('/about') }}" class="text-primary-200 hover:text-white text-sm transition-colors">About Us</a></li>
-                            <li><a href="{{ url('/dairy') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Dairy Farming</a></li>
-                            <li><a href="{{ url('/livestock') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Livestock & Animal Care</a></li>
-                            <li><a href="{{ url('/crops') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Crop Production</a></li>
-                            <li><a href="{{ url('/investment') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Investment Plans</a></li>
+                            @foreach (array_slice($menuItems, 0, 6) as $item)
+                                <li><a href="{{ url($item['url']) }}" class="text-primary-200 hover:text-white text-sm transition-colors">{{ $item['label'] }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
 
-                    <!-- More Links -->
+                    <!-- Footer Links -->
                     <div>
-                        <h4 class="text-lg font-semibold mb-4 text-gold-300">More</h4>
+                        <h4 class="text-lg font-semibold mb-4 text-gold-300">Farm Pages</h4>
                         <ul class="space-y-2">
-                            <li><a href="{{ url('/retirement') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Retirement Program</a></li>
-                            <li><a href="{{ url('/sustainability') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Sustainability</a></li>
-                            <li><a href="{{ url('/gallery') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Gallery</a></li>
-                            <li><a href="{{ url('/testimonials') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Testimonials</a></li>
-                            <li><a href="{{ url('/blog') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Blog & Updates</a></li>
-                            <li><a href="{{ url('/contact') }}" class="text-primary-200 hover:text-white text-sm transition-colors">Contact Us</a></li>
+                            @foreach (array_slice($menuItems, 6) as $item)
+                                <li><a href="{{ url($item['url']) }}" class="text-primary-200 hover:text-white text-sm transition-colors">{{ $item['label'] }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
 
@@ -200,7 +199,7 @@
                         <ul class="space-y-3">
                             <li class="flex items-start gap-3">
                                 <svg class="w-5 h-5 text-gold-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                                <span class="text-primary-200 text-sm">Heritage Valley, Rural Route 123, United States</span>
+                                <span class="text-primary-200 text-sm">Crosby Farm and Investments, United States</span>
                             </li>
                             <li class="flex items-center gap-3">
                                 <svg class="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
@@ -208,7 +207,7 @@
                             </li>
                             <li class="flex items-center gap-3">
                                 <svg class="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                                <a href="mailto:info@heritagevalleyfarms.com" class="text-primary-200 hover:text-white text-sm transition-colors">info@heritagevalleyfarms.com</a>
+                                <a href="mailto:info@crosbyfarminvestments.com" class="text-primary-200 hover:text-white text-sm transition-colors">info@crosbyfarminvestments.com</a>
                             </li>
                             <li class="flex items-center gap-3">
                                 <svg class="w-5 h-5 text-gold-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -224,7 +223,7 @@
         <div class="border-t border-white/10 py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p class="text-primary-300 text-sm">&copy; {{ date('Y') }} Heritage Valley Farms. All Rights Reserved.</p>
+                    <p class="text-primary-300 text-sm">&copy; {{ date('Y') }} Crosby Farm and Investments. All Rights Reserved.</p>
                     <div class="flex gap-6">
                         <a href="#" class="text-primary-300 hover:text-white text-sm transition-colors">Privacy Policy</a>
                         <a href="#" class="text-primary-300 hover:text-white text-sm transition-colors">Terms & Conditions</a>
