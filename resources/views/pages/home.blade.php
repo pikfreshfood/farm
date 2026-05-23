@@ -8,7 +8,7 @@
 <section class="relative min-h-[620px] flex items-center overflow-hidden bg-cream">
     <!-- Background Image -->
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1920&q=90" alt="Crosby Farm and Investments" class="w-full h-full object-cover">
+        <img src="{{ asset('images/farm/crop-field-equipment.jpeg') }}" alt="Crosby Farm field operations" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/8"></div>
         <div class="absolute inset-0 bg-gradient-to-t from-cream/80 via-transparent to-transparent"></div>
     </div>
@@ -48,7 +48,7 @@
     
     <!-- Cow Image Overlay -->
     <div class="absolute right-0 bottom-0 hidden lg:block w-[42%] h-full pointer-events-none">
-        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=900&q=90" alt="Dairy Cow" class="w-full h-full object-cover object-center opacity-95 [mask-image:linear-gradient(90deg,transparent,black_22%)]">
+        <img src="{{ asset('images/banner.jfif') }}" alt="Crosby Farm cattle" class="w-full h-full object-cover object-center opacity-95 [mask-image:linear-gradient(90deg,transparent,black_22%)]">
     </div>
 </section>
 
@@ -59,7 +59,7 @@
             <!-- Image -->
             <div class="relative animate-on-scroll">
                 <div class="rounded-lg overflow-hidden shadow-xl shadow-primary-900/10 ring-1 ring-primary-100">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Crosby Farm and Investments" class="w-full h-[400px] object-cover">
+                    <img src="{{ asset('images/farm/hay-bales-equipment.jpeg') }}" alt="Crosby Farm hay and field equipment" class="w-full h-[400px] object-cover">
                 </div>
                 <div class="hidden sm:block absolute -bottom-6 -right-6 w-48 h-48 bg-primary-100 rounded-lg -z-10"></div>
             </div>
@@ -132,6 +132,39 @@
     </div>
 </section>
 
+<!-- Milking Section -->
+<section class="py-20 bg-primary-50 border-y border-primary-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
+            <div class="animate-on-scroll">
+                <div class="inline-flex items-center gap-2 text-primary-500 font-semibold text-sm mb-4">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    Fresh Dairy Operations
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary-600 font-serif mb-6">Milking</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Watch a glimpse of our dairy process, where careful animal handling and consistent milking routines help us produce quality milk for families and farm partners.
+                </p>
+                <a href="{{ url('/dairy') }}" class="inline-flex items-center gap-2 bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:-translate-y-0.5">
+                    Learn About Dairy Farming
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+
+            <div class="animate-on-scroll">
+                <div class="rounded-lg bg-white p-3 shadow-xl shadow-primary-900/10 ring-1 ring-primary-100" style="max-width: 560px; margin-left: auto; margin-right: auto;">
+                    <div class="rounded-md overflow-hidden bg-black ring-1 ring-primary-900/10" style="height: 315px;">
+                        <video class="w-full object-contain" style="height: 315px; max-height: 315px;" controls preload="metadata">
+                            <source src="{{ asset('videos/vd.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Services Section -->
 <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -147,7 +180,7 @@
             <!-- Dairy Production -->
             <div class="farm-card bg-white rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80" alt="Dairy Production" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <img src="{{ asset('images/farm/milking-equipment.jpeg') }}" alt="Dairy milking equipment" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center -mt-12 mb-4 relative z-10 shadow-lg">
@@ -165,7 +198,7 @@
             <!-- Livestock Rearing -->
             <div class="farm-card bg-white rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.1s">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80" alt="Livestock Rearing" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <img src="{{ asset('images/farm/cattle-pasture-lane.jpeg') }}" alt="Crosby Farm livestock pasture" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center -mt-12 mb-4 relative z-10 shadow-lg">
@@ -183,7 +216,7 @@
             <!-- Crop Farming -->
             <div class="farm-card bg-white rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.2s">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80" alt="Crop Farming" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <img src="{{ asset('images/farm/crop-field-equipment.jpeg') }}" alt="Crosby Farm crop field operations" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center -mt-12 mb-4 relative z-10 shadow-lg">
@@ -201,7 +234,7 @@
             <!-- Farm Investments -->
             <div class="farm-card bg-white rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.3s">
                 <div class="h-48 overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600&q=80" alt="Farm Investments" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
+                    <img src="{{ asset('images/farm/john-deere-combine.jpeg') }}" alt="Farm investment equipment" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500">
                 </div>
                 <div class="p-6">
                     <div class="w-12 h-12 bg-primary-500 rounded-full flex items-center justify-center -mt-12 mb-4 relative z-10 shadow-lg">
@@ -270,7 +303,7 @@
 <!-- Stats Section -->
 <section class="relative py-20 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80" alt="Farm Aerial" class="w-full h-full object-cover">
+        <img src="{{ asset('images/farm/hay-bales-equipment.jpeg') }}" alt="Crosby Farm hay equipment" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-r from-primary-900/94 via-primary-700/88 to-primary-600/84"></div>
     </div>
     

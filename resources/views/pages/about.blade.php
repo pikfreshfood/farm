@@ -6,7 +6,7 @@
 <!-- Page Header -->
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1920&q=80" alt="About Us" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/crop-field-equipment.jpeg') }}" alt="Crosby Farm field operations" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">About Us</h1>
@@ -25,7 +25,7 @@
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="animate-on-scroll">
                 <div class="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80" alt="Commercial farm fields" class="w-full h-[400px] object-cover">
+                    <img src="{{ asset('images/farm/red-tractor-portrait.jpeg') }}" alt="Crosby Farm tractor operations" class="w-full h-[400px] object-cover">
                 </div>
             </div>
             <div class="animate-on-scroll">

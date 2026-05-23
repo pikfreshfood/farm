@@ -5,7 +5,7 @@
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80" alt="Gallery" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/john-deere-combine.jpeg') }}" alt="Crosby Farm gallery" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Gallery</h1>
@@ -33,7 +33,7 @@
         <!-- Gallery Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="dairy">
-                <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80" alt="Dairy Cows" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/cattle-barn-close.jpeg') }}" alt="Dairy Cows" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Dairy Cows at Pasture</h4>
@@ -42,7 +42,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="crops" style="animation-delay: 0.1s">
-                <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80" alt="Farm Landscape" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/crop-field-equipment.jpeg') }}" alt="Farm Landscape" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Commercial Farm Landscape</h4>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="crops" style="animation-delay: 0.2s">
-                <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80" alt="Crop Fields" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/hay-bales-equipment.jpeg') }}" alt="Crop Fields" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Golden Crop Fields</h4>
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="operations" style="animation-delay: 0.3s">
-                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80" alt="Milking Operations" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/milking-equipment.jpeg') }}" alt="Milking Operations" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Milking Operations</h4>
@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="operations" style="animation-delay: 0.4s">
-                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80" alt="Farm Machinery" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/new-holland-tractor.jpeg') }}" alt="Farm Machinery" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Modern Farm Machinery</h4>
@@ -78,25 +78,25 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="investment" style="animation-delay: 0.5s">
-                <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=600&q=80" alt="Investment Meeting" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/truck-lineup.jpeg') }}" alt="Investment and logistics equipment" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Investor Meeting</h4>
-                        <p class="text-primary-200 text-sm">Building partnerships</p>
+                        <h4 class="text-white font-semibold">Farm Logistics</h4>
+                        <p class="text-primary-200 text-sm">Equipment and transport capacity</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="livestock" style="animation-delay: 0.6s">
-                <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Goat Herd" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/cattle-pasture-lane.jpeg') }}" alt="Pasture livestock" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Goat Herd</h4>
-                        <p class="text-primary-200 text-sm">Healthy goat farming</p>
+                        <h4 class="text-white font-semibold">Pasture Livestock</h4>
+                        <p class="text-primary-200 text-sm">Healthy grazing and livestock care</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="livestock" style="animation-delay: 0.7s">
-                <img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Poultry and specialty livestock" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/peacock-farm.jpeg') }}" alt="Poultry and specialty livestock" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Poultry & Specialty Livestock</h4>
@@ -105,34 +105,34 @@
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="crops" style="animation-delay: 0.8s">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&q=80" alt="Sunset Farm" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/feed-bunk-operation.jpeg') }}" alt="Feed operation" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Sunset Over the Farm</h4>
-                        <p class="text-primary-200 text-sm">End of a productive day</p>
+                        <h4 class="text-white font-semibold">Feed Operations</h4>
+                        <p class="text-primary-200 text-sm">Daily feed management</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="operations" style="animation-delay: 0.9s">
-                <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=600&q=80" alt="Family Farming" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/red-wagon-tractor.jpeg') }}" alt="Farm equipment in transit" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Family Farming Heritage</h4>
-                        <p class="text-primary-200 text-sm">Generations of dedication</p>
+                        <h4 class="text-white font-semibold">Farm Equipment Transport</h4>
+                        <p class="text-primary-200 text-sm">Equipment moving between work areas</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="crops" style="animation-delay: 1s">
-                <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=600&q=80" alt="Harvest Season" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/feed-truck-operation.jpeg') }}" alt="Harvest and feed handling" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
-                        <h4 class="text-white font-semibold">Harvest Season</h4>
-                        <p class="text-primary-200 text-sm">Bountiful yields</p>
+                        <h4 class="text-white font-semibold">Feed Handling</h4>
+                        <p class="text-primary-200 text-sm">Field output moved into farm use</p>
                     </div>
                 </div>
             </div>
             <div class="gallery-item group relative overflow-hidden rounded-xl cursor-pointer animate-on-scroll" data-category="dairy" style="animation-delay: 1.1s">
-                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150?w=600&q=80" alt="Fresh Milk" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
+                <img src="{{ asset('images/farm/cattle-barn-herd.jpeg') }}" alt="Fresh dairy production" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500">
                 <div class="absolute inset-0 bg-gradient-to-t from-primary-700/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                     <div>
                         <h4 class="text-white font-semibold">Fresh Milk Production</h4>

@@ -5,7 +5,7 @@
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=1920&q=80" alt="Dairy Farming" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/cattle-barn-herd.jpeg') }}" alt="Crosby Farm dairy cattle barn" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Dairy Farming</h1>
@@ -34,7 +34,7 @@
             </div>
             <div class="animate-on-scroll">
                 <div class="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80" alt="Dairy Farming" class="w-full h-[400px] object-cover">
+                    <img src="{{ asset('images/farm/milking-equipment.jpeg') }}" alt="Crosby Farm dairy milking equipment" class="w-full h-[400px] object-cover">
                 </div>
             </div>
         </div>

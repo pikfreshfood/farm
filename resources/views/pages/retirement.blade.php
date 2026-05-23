@@ -5,7 +5,7 @@
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=1920&q=80" alt="Retirement" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/truck-lineup.jpeg') }}" alt="Retirement agricultural investment operations" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Retirement Investment Program</h1>
@@ -32,7 +32,7 @@
                 </ul>
             </div>
             <div class="animate-on-scroll">
-                <div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&q=80" alt="Retirement" class="w-full h-[400px] object-cover"></div>
+                <div class="rounded-2xl overflow-hidden shadow-xl"><img src="{{ asset('images/farm/john-deere-tractor-portrait.jpeg') }}" alt="Agricultural retirement investment operations" class="w-full h-[400px] object-cover"></div>
             </div>
         </div>
     </div>

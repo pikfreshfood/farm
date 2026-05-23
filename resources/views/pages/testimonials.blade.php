@@ -5,7 +5,7 @@
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1920&q=80" alt="Testimonials" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/cattle-barn-selfie.jpeg') }}" alt="Crosby Farm partners and visitors" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Testimonials</h1>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Crosby Farm and Investments') - Feeding Tomorrow, Building Wealth for Generations</title>
     <meta name="description" content="@yield('meta_description', 'A large-scale commercial agricultural and investment enterprise dedicated to sustainable farming, crop production, livestock rearing, dairy farming, and agricultural wealth creation across the United States.')">
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="shortcut icon" href="{{ asset('favicon.svg') }}">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,25 +20,25 @@
         .font-serif { font-family: 'Playfair Display', Georgia, serif; }
         .font-sans { font-family: 'Inter', system-ui, sans-serif; }
         .site-header-inner {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 24px;
-            min-height: 86px;
+            width: 100%;
+            margin: 0;
+            padding: 0 10px;
+            min-height: 78px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            gap: 28px;
+            justify-content: flex-start;
+            gap: 18px;
         }
         .site-brand {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             flex-shrink: 0;
             text-decoration: none;
         }
         .site-brand-mark {
-            width: 48px;
-            height: 48px;
+            width: 42px;
+            height: 42px;
             border-radius: 999px;
             background: linear-gradient(135deg, #22a447, #075b25);
             color: #fff;
@@ -49,23 +51,26 @@
         .site-brand-title {
             color: #075b25;
             font-family: 'Playfair Display', Georgia, serif;
-            font-size: 18px;
+            font-size: 15px;
             font-weight: 800;
             line-height: 0.95;
             margin: 0;
         }
         .site-brand-subtitle {
             display: block;
-            margin-top: 6px;
+            margin-top: 5px;
             color: #64748b;
-            font-size: 11px;
+            font-size: 9px;
             line-height: 1;
             letter-spacing: 0;
         }
         .site-nav {
             display: flex;
             align-items: center;
-            gap: 18px;
+            justify-content: flex-start;
+            gap: 10px;
+            flex: 1 1 auto;
+            min-width: 0;
             white-space: nowrap;
         }
         .site-nav-link,
@@ -76,7 +81,7 @@
             gap: 4px;
             min-height: 38px;
             color: #334155;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 1;
             text-decoration: none;
@@ -101,6 +106,9 @@
             height: 2px;
             border-radius: 999px;
             background: #16803a;
+        }
+        .site-nav-wide-link {
+            display: none;
         }
         .site-nav-more {
             position: relative;
@@ -147,11 +155,11 @@
             align-items: center;
             justify-content: center;
             min-height: 40px;
-            padding: 0 16px;
+            padding: 0 12px;
             border-radius: 8px;
             background: #16803a;
             color: #fff;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 800;
             text-decoration: none;
             box-shadow: 0 10px 20px rgba(22, 128, 58, 0.18);
@@ -161,13 +169,21 @@
             background: #0f6a2f;
             transform: translateY(-1px);
         }
+        @media (min-width: 1280px) {
+            .site-nav-wide-link {
+                display: inline-flex;
+            }
+            .site-nav-more {
+                display: none;
+            }
+        }
         @media (max-width: 1180px) {
             .site-header-inner {
-                gap: 18px;
-                padding: 0 18px;
+                gap: 12px;
+                padding: 0 8px;
             }
             .site-nav {
-                gap: 12px;
+                gap: 8px;
             }
             .site-nav-link,
             .site-nav-more-button,
@@ -175,7 +191,7 @@
                 font-size: 12px;
             }
             .site-brand-title {
-                font-size: 17px;
+                font-size: 14px;
             }
         }
         @media (max-width: 1023px) {
@@ -191,6 +207,8 @@
     @stack('styles')
 </head>
 <body class="font-sans antialiased text-gray-800 bg-white">
+    @include('partials.language-selector')
+
     <!-- Top Bar -->
     <div class="bg-gradient-to-r from-primary-900 via-primary-700 to-primary-600 text-white py-2 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -226,26 +244,34 @@
                     $menuItems = [
                         ['label' => 'Home', 'url' => '/', 'active' => '/'],
                         ['label' => 'About Us', 'url' => '/about', 'active' => 'about'],
-                        ['label' => 'Dairy Farming', 'url' => '/dairy', 'active' => 'dairy'],
-                        ['label' => 'Livestock & Animal Care', 'url' => '/livestock', 'active' => 'livestock'],
-                        ['label' => 'Crop Production', 'url' => '/crops', 'active' => 'crops'],
-                        ['label' => 'Investment Plans', 'url' => '/investment', 'active' => 'investment'],
-                        ['label' => 'Retirement Investment Program', 'url' => '/retirement', 'active' => 'retirement'],
-                        ['label' => 'Sustainability & Mission', 'url' => '/sustainability', 'active' => 'sustainability'],
+                        ['label' => 'Dairy Farming', 'short' => 'Dairy', 'url' => '/dairy', 'active' => 'dairy'],
+                        ['label' => 'Livestock & Animal Care', 'short' => 'Livestock', 'url' => '/livestock', 'active' => 'livestock'],
+                        ['label' => 'Crop Production', 'short' => 'Crops', 'url' => '/crops', 'active' => 'crops'],
+                        ['label' => 'Investment Plans', 'short' => 'Investment', 'url' => '/investment', 'active' => 'investment'],
+                        ['label' => 'Retirement Investment Program', 'short' => 'Retirement', 'url' => '/retirement', 'active' => 'retirement'],
+                        ['label' => 'Sustainability & Mission', 'short' => 'Sustainability', 'url' => '/sustainability', 'active' => 'sustainability'],
                         ['label' => 'Gallery', 'url' => '/gallery', 'active' => 'gallery'],
                         ['label' => 'Testimonials', 'url' => '/testimonials', 'active' => 'testimonials'],
-                        ['label' => 'Blog & Farm Updates', 'url' => '/blog', 'active' => 'blog'],
-                        ['label' => 'Contact Us', 'url' => '/contact', 'active' => 'contact'],
+                        ['label' => 'Blog & Farm Updates', 'short' => 'Blog', 'url' => '/blog', 'active' => 'blog'],
+                        ['label' => 'Login/Register', 'url' => '/register', 'active' => 'register'],
+                        ['label' => 'Contact Us', 'short' => 'Contact', 'url' => '/contact', 'active' => 'contact'],
                     ];
                 @endphp
 
                 <!-- Desktop Navigation -->
                 <nav class="site-nav">
-                    @foreach (array_slice($menuItems, 0, 6) as $item)
+                    @foreach (array_slice($menuItems, 0, 8) as $item)
                         @php
                             $isActive = $item['active'] === '/' ? request()->is('/') : request()->is($item['active']);
                         @endphp
-                        <a href="{{ url($item['url']) }}" class="site-nav-link {{ $isActive ? 'is-active' : '' }}">{{ $item['label'] }}</a>
+                        <a href="{{ url($item['url']) }}" class="site-nav-link {{ $isActive ? 'is-active' : '' }}">{{ $item['short'] ?? $item['label'] }}</a>
+                    @endforeach
+
+                    @foreach (array_slice($menuItems, 8, 4) as $item)
+                        @php
+                            $isActive = request()->is($item['active']);
+                        @endphp
+                        <a href="{{ url($item['url']) }}" class="site-nav-link site-nav-wide-link {{ $isActive ? 'is-active' : '' }}">{{ $item['short'] ?? $item['label'] }}</a>
                     @endforeach
 
                     <div class="site-nav-more">
@@ -254,7 +280,7 @@
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                         </button>
                         <div class="site-nav-dropdown">
-                            @foreach (array_slice($menuItems, 6, 5) as $item)
+                            @foreach (array_slice($menuItems, 8, 4) as $item)
                                 @php
                                     $isActive = request()->is($item['active']);
                                 @endphp
@@ -264,9 +290,9 @@
                     </div>
 
                     @php
-                        $contactItem = $menuItems[11];
+                        $contactItem = $menuItems[12];
                     @endphp
-                    <a href="{{ url($contactItem['url']) }}" class="site-nav-cta">{{ $contactItem['label'] }}</a>
+                    <a href="{{ url($contactItem['url']) }}" class="site-nav-cta">{{ $contactItem['short'] ?? $contactItem['label'] }}</a>
                 </nav>
 
                 <!-- Mobile Menu Button -->

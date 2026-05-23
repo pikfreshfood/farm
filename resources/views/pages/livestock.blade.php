@@ -5,7 +5,7 @@
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=1920&q=80" alt="Livestock" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/cattle-pasture-lane.jpeg') }}" alt="Crosby Farm livestock pasture" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Livestock & Animal Care</h1>
@@ -26,23 +26,23 @@
         </div>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=600&q=80" alt="Cattle" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="h-48 overflow-hidden"><img src="{{ asset('images/farm/cattle-barn-close.jpeg') }}" alt="Cattle" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
                 <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Cattle</h3><p class="text-gray-600 text-sm">Managed for dairy production, breeding, and long-term agricultural productivity.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.1s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Goats" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="h-48 overflow-hidden"><img src="{{ asset('images/farm/cattle-pasture-lane.jpeg') }}" alt="Grazing livestock" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
                 <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Goats</h3><p class="text-gray-600 text-sm">Healthy goat farming for milk and agricultural breeding programs.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.2s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Farm Dogs" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="h-48 overflow-hidden"><img src="{{ asset('images/farm/farm-dog-field.jpeg') }}" alt="Farm Dogs" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
                 <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Farm Dogs</h3><p class="text-gray-600 text-sm">Farm security and responsible care programs with experienced handlers.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.3s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Poultry" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="h-48 overflow-hidden"><img src="{{ asset('images/farm/peacock-farm.jpeg') }}" alt="Poultry and specialty birds" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
                 <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Poultry</h3><p class="text-gray-600 text-sm">Poultry systems that support food production and diversified farm income.</p></div>
             </div>
             <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-on-scroll" style="animation-delay: 0.4s">
-                <div class="h-48 overflow-hidden"><img src="https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?w=600&q=80" alt="Sheep and Other Agricultural Animals" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
+                <div class="h-48 overflow-hidden"><img src="{{ asset('images/farm/donkeys-snow.jpeg') }}" alt="Other agricultural animals" class="w-full h-full object-cover hover:scale-110 transition-transform duration-500"></div>
                 <div class="p-6"><h3 class="text-lg font-bold text-primary-700 mb-2">Sheep & Other Agricultural Animals</h3><p class="text-gray-600 text-sm">Sheep and specialty livestock raised through environmentally responsible methods.</p></div>
             </div>
         </div>
@@ -63,7 +63,7 @@
                 </ul>
             </div>
             <div class="animate-on-scroll">
-                <div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e?w=800&q=80" alt="Animal Care" class="w-full h-[400px] object-cover"></div>
+                <div class="rounded-2xl overflow-hidden shadow-xl"><img src="{{ asset('images/farm/farm-yard-dog.jpeg') }}" alt="Animal care around the farm" class="w-full h-[400px] object-cover"></div>
             </div>
         </div>
     </div>

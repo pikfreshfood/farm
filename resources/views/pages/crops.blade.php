@@ -5,7 +5,7 @@
 @section('content')
 <section class="relative py-24 bg-primary-600 overflow-hidden">
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80" alt="Crop Production" class="w-full h-full object-cover opacity-20">
+        <img src="{{ asset('images/farm/crop-field-equipment.jpeg') }}" alt="Crosby Farm crop field equipment" class="w-full h-full object-cover opacity-20">
     </div>
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="text-4xl md:text-5xl font-bold text-white font-serif mb-4">Crop Production</h1>
@@ -36,7 +36,7 @@
                 </ul>
             </div>
             <div class="animate-on-scroll">
-                <div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80" alt="Crop Production" class="w-full h-[400px] object-cover"></div>
+                <div class="rounded-2xl overflow-hidden shadow-xl"><img src="{{ asset('images/farm/hay-bales-equipment.jpeg') }}" alt="Hay and crop production equipment" class="w-full h-[400px] object-cover"></div>
             </div>
         </div>
     </div>
